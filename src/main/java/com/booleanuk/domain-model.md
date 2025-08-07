@@ -11,25 +11,25 @@
 + I want to see all the tasks in my list ordered alphabetically in ascending order.
 + I want to see all the tasks in my list ordered alphabetically in descending order.
 ---
-| Classes  | Members        | Methods                                     | Scenario                 | Output                               | 
-|----------|----------------|---------------------------------------------|--------------------------|--------------------------------------|
-| TodoList |                | addTasks(String task)                       | valid parameter          | task added to list of tasks          |
-|          |                |                                             | invalid parameter (null) | no task added                        |
-|          |                | seeAllTasks()                               |                          | return all tasks                     |
-|          |                | changeStatus(String task, String newStatus) | valid parameter          | status changed on given task         |
-|          |                |                                             | invalid parameter (null) | no change made                       |
-|          |                | getTaskBasedOnStatus(String status)         | status = complete        | return all complete tasks            |
-|          |                |                                             | status = incomplete      | return all incomplete tasks          |
-|          |                | searchForTask(String task)                  | task in map              | return that task was found           |
-|          |                |                                             | task not in map          | return that task was not found       |
-|          |                | removeTask(String task)                     | if task in map           | remove task from map                 |
-|          |                |                                             | if not in map            | nothing happens                      |
-|          |                | orderAllTaskAscOrder()                      |                          | returns all task in ascending order  |
-|          |                | orderAllTasksDescOrder()                    |                          | returns all task in descending order |
-| Tasks    | boolean status |                                             |                          |                                      |
-|          | String name    |                                             |                          |                                      |
-|          |                | changeStatus()                              | status is true           | member status becomes true           |
-|          |                | changeStatus()                              | status is false          | member status becomes false          |
+| Classes  | Members        | Methods                                 | Scenario                 | Output                               | 
+|----------|----------------|-----------------------------------------|--------------------------|--------------------------------------|
+| TodoList |                | addTasks(Task task)                     | valid parameter          | task added to list of tasks          |
+|          |                |                                         | invalid parameter (null) | no task added                        |
+|          |                | seeAllTasks()                           |                          | return all tasks                     |
+|          |                | changeStatus(Task task, boolean status) | valid parameter          | status changed on given task         |
+|          |                |                                         | invalid parameter (null) | no change made                       |
+|          |                | getTaskBasedOnStatus(String status)     | status = complete        | return all complete tasks            |
+|          |                |                                         | status = incomplete      | return all incomplete tasks          |
+|          |                | searchForTask(Task task)                | task in map              | return that task was found           |
+|          |                |                                         | task not in map          | return that task was not found       |
+|          |                | removeTask(Task task)                   | if task in map           | remove task from map                 |
+|          |                |                                         | if not in map            | nothing happens                      |
+|          |                | orderAllTaskAscOrder()                  |                          | returns all task in ascending order  |
+|          |                | orderAllTasksDescOrder()                |                          | returns all task in descending order |
+| Tasks    | boolean status |                                         |                          |                                      |
+|          | String name    |                                         |                          |                                      |
+|          |                | changeStatus()                          | status is true           | member status becomes true           |
+|          |                | changeStatus()                          | status is false          | member status becomes false          |
 
 
 
